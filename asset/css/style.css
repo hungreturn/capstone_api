@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: #fff;
 }
 
 header .content {
@@ -80,6 +79,7 @@ header .content .header_search_account .account i {
   padding: 10px;
   border: 2px solid rgb(231, 225, 225);
   border-radius: 10px;
+  transition: all 0.5s;
 }
 .display .display_product #product .item .img {
   text-align: center;
@@ -94,8 +94,47 @@ header .content .header_search_account .account i {
   text-decoration: none;
   background-color: transparent;
 }
+.display .display_product #product .item:hover {
+  cursor: pointer;
+  border: 2px solid #d11414;
+  scale: 102%;
+}
 
-.menu .menu_content {
+footer {
+  margin-top: 80px;
+  background-color: #000;
+  padding-top: 50px;
+  color: gray;
+}
+footer .content {
   display: flex;
   justify-content: space-between;
+}
+footer .content .content_1 ul, footer .content .content_2 ul, footer .content .content_3 ul {
+  list-style: none;
+  padding: 0;
+}
+footer .content .content_1 ul li, footer .content .content_2 ul li, footer .content .content_3 ul li {
+  margin-bottom: 10px;
+}
+footer .content .content_1 ul li:first-child, footer .content .content_2 ul li:first-child, footer .content .content_3 ul li:first-child {
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+footer .about {
+  display: flex;
+  justify-content: space-between;
+}
+footer .about .located {
+  margin-right: 10px;
+}
+footer .about .located .span_located {
+  color: #fff;
+  padding: 0 5px;
+}
+footer .about .info ul li {
+  display: inline-block;
+  padding: 10px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

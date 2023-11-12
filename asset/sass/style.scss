@@ -8,7 +8,6 @@ $m_section : 40px 0;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: $color_bg1;
 }
 
 
@@ -105,6 +104,7 @@ header{
                 padding: 10px;
                 border: 2px solid rgb(231, 225, 225);
                 border-radius: 10px;
+                transition: all 0.5s;
                 .img{
                     text-align: center;
                     background-color: transparent;
@@ -121,16 +121,65 @@ header{
                     }
                     
                 }
+                &:hover{
+                    cursor: pointer;
+                    border: 2px solid #d11414;
+                    scale: (102%);
+                }
 
             }
+
         }
     }
 }
 
-.menu{
-    .menu_content{
+footer{
+  
+    margin-top: 80px;
+    background-color: #000;
+    padding-top: 50px;
+    color: gray;
+    .content{
         display: flex;
         justify-content: space-between;
-        
+        .content_1, .content_2, .content_3{
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    margin-bottom: 10px;
+                }
+                li:first-child{
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+        }
+    }
+    .about{
+        display: flex;
+        justify-content: space-between;
+
+        .located{
+            margin-right: 10px;
+            .span_located{
+                color: #fff;
+                padding: 0 5px;
+            }
+
+        }
+        .info{
+            ul{
+
+                li{
+                    display: inline-block;
+                    padding: 10px;
+                    color: white;
+                }
+            }
+
+        }
     }
 }

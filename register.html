@@ -67,16 +67,16 @@
 
     <section class="form_input">
       <div class="container">
-        <form class="form_submit" action="">
+        <form class="form_submit" action="/submit">
           <div class="mb-3">
 
           <div class="content_left">
   
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Email">
+            class="form-control" name="" id="email" aria-describedby="helpId" placeholder="Email">
   
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Password">
+            class="form-control" name="" id="password" aria-describedby="helpId" placeholder="Password">
   
           <input type="text"
             class="form-control" name="" id="" aria-describedby="helpId" placeholder="Password confirm">
@@ -85,23 +85,79 @@
           <div class="content_right">
   
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Name">
+            class="form-control" name="" id="name" aria-describedby="helpId" placeholder="Name">
   
           <input type="text"
-            class="form-control" name="" id="" aria-describedby="helpId" placeholder="Phone">
+            class="form-control" name="" id="phone" aria-describedby="helpId" placeholder="Phone">
   
-          <select name="Gender" id="" aria-placeholder="Gender"> 
+          <select name="Gender" id="gender" aria-placeholder="Gender"> 
             <option value="">Gioi Tinh</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
+            <option value="true">Male</option>
+            <option value="false">Female</option>
           </select>
           </div>
 
         </div>
-        <button class="btn btn-dark" type="submit">Submit</button>
+        <button class="btn btn-dark" type="submit" onclick="getValueCustomer()">Submit</button>
         </form>
       </div>
     </section>
+   
+        <!--  Footer-->
+  <footer>
+    <div class="container">
+      <div class="content">
+        <div class="content_1">
+          <ul>
+            <li>FIND A STORE</li>
+            <li>BECOME A MEMBER</li>
+            <li>Send Uss Feedback</li>
+          </ul>
+        </div>
+        <div class="content_2">
+          <ul>
+            <li>GET HELP</li>
+          <li>Order Status</li>
+          <li>Delivery</li>
+          <li>Returns</li>
+          <li>Payment Options</li>
+          <li>Contact Us</li>
+        </ul>
+        </div>
+        <div class="content_3">
+          <ul>
+            <li>ABOUT NIKE</li>
+            <li>News</li>
+            <li>Careers</li>
+            <li>Investors</li>
+            <li>Sustainability</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="about">
+        <div class="located">
+          <span class="span_located">
+            <i class="fa-solid fa-location-dot"></i>
+            Việt Nam
+          </span>
+          <span class="span_nike">
+            © 2023 Nike, Inc. All Rights Reserved
+          </span>
+        </div>
+        <div class="info">
+          <ul>
+            <li>Guides</li>
+            <li>Terms of Sale
+            </li>
+            <li>Terms of Use
+            </li>
+            <li>Nike Privacy Policy</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
    
 
     
@@ -120,6 +176,8 @@
   </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.1/axios.min.js" integrity="sha512-m9S8W3a9hhBHPFAbEIaG7J9P92dzcAWwM42VvJp5n1/M599ldK6Z2st2SfJGsX0QR4LfCVr681vyU5vW8d218w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/Customer.js"></script>
+  <script src="./js/variable.js"></script>
   <script src="./js/register.js" ></script>
   
 </body>
