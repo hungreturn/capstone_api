@@ -1,0 +1,86 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+header .content {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content .header_logo img {
+  width: 80px;
+  height: 40px;
+}
+header .content .header_nav {
+  align-items: center;
+}
+header .content .header_nav ul {
+  margin: 0;
+  padding: 0;
+}
+header .content .header_nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+header .content .header_nav ul li:hover a {
+  color: gray;
+  text-decoration: underline;
+}
+header .content .header_nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+header .content .header_search_account {
+  display: flex;
+  align-items: center;
+}
+header .content .header_search_account .search .mb-3 {
+  margin-top: 16px;
+}
+header .content .header_search_account .search .mb-3 input {
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+header .content .header_search_account .cart {
+  margin: 0 20px;
+}
+header .content .header_search_account .cart i {
+  font-size: 25px;
+  color: #000;
+}
+header .content .header_search_account .account i {
+  font-size: 25px;
+  color: #000;
+}
+
+.form_input form {
+  position: relative;
+}
+.form_input form .mb-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.form_input form .mb-3 input {
+  width: 400px;
+  margin: 20px;
+}
+.form_input form .mb-3 select {
+  height: 40px;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.form_input form button {
+  position: absolute;
+  right: 125px;
+  padding: 5px;
+}/*# sourceMappingURL=register.css.map */

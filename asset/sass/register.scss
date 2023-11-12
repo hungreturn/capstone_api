@@ -1,0 +1,110 @@
+// valiable
+$color_bg1 : #fff;
+$color_text1 : #000;
+$m_section : 40px 0;
+
+// reset css
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $color_bg1;
+}
+
+
+header{
+    .content{
+        margin: $m_section;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo{
+            img{
+                width: 80px;
+                height: 40px;
+            }
+        }
+        .header_nav{
+            align-items: center;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    &:hover{
+                        a{
+                            color: gray;
+                            text-decoration: underline;
+                        }
+                    }
+                    display: inline-block;
+                    padding: 0 10px;
+                    a{
+                        text-decoration: none;
+                        color: $color_text1;
+                        font-size: 18px;
+                        font-weight: 600;
+                        transition: all 0.5s;
+                    }
+                }
+                
+            }
+        }
+        .header_search_account{
+            display: flex;
+            align-items: center;
+            .search{
+                .mb-3{
+                    margin-top: 16px;
+                    input{
+                        border-radius: 20px;
+                        border: 1px solid $color_text1;
+                    }
+                }
+            }
+            .cart{
+                margin: 0 20px;
+                i{
+                    font-size: 25px;
+                    color: #000;
+                }
+            }
+            .account{
+                i{
+                    font-size: 25px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+
+.form_input{
+    form{
+        position: relative;
+        .mb-3{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            input{
+                width: 400px;
+                margin: 20px;
+            }
+            select{
+                height: 40px;
+                border-radius: 5px;
+                margin-left: 20px;
+                width: 400px;
+                margin-bottom: 20px;
+    
+            }
+        }
+        button{
+            position: absolute;
+            right: 125px;
+            padding: 5px;
+        }
+    }
+    
+    
+}

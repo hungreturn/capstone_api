@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+header .content {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .content .header_logo img {
+  width: 80px;
+  height: 40px;
+}
+header .content .header_nav {
+  align-items: center;
+}
+header .content .header_nav ul {
+  margin: 0;
+  padding: 0;
+}
+header .content .header_nav ul li {
+  display: inline-block;
+  padding: 0 10px;
+}
+header .content .header_nav ul li:hover a {
+  color: gray;
+  text-decoration: underline;
+}
+header .content .header_nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+header .content .header_search_account {
+  display: flex;
+  align-items: center;
+}
+header .content .header_search_account .search .mb-3 {
+  margin-top: 16px;
+}
+header .content .header_search_account .search .mb-3 input {
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+header .content .header_search_account .cart {
+  margin: 0 20px;
+}
+header .content .header_search_account .cart i {
+  font-size: 25px;
+  color: #000;
+}
+header .content .header_search_account .account i {
+  font-size: 25px;
+  color: #000;
+}
+
+.banner .banner_img {
+  text-align: center;
+  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://lzd-img-global.slatic.net/g/p/b1b9efce10dc5b6205b18ea27e94fe9f.png_1200x1200q80.png_.webp);
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+.display .display_product #product {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 35px;
+  justify-content: center;
+}
+.display .display_product #product .item {
+  padding: 10px;
+  border: 2px solid rgb(231, 225, 225);
+  border-radius: 10px;
+}
+.display .display_product #product .item .img {
+  text-align: center;
+  background-color: transparent;
+}
+.display .display_product #product .item .info {
+  text-align: center;
+  font-size: 15px;
+}
+.display .display_product #product .item .info button a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.menu .menu_content {
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */

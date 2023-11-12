@@ -1,0 +1,180 @@
+// valiable
+$color_bg1 : #fff;
+$color_text1 : #000;
+$m_section : 40px 0;
+
+// reset css
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $color_bg1;
+}
+
+
+header{
+    .content{
+        margin: $m_section;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo{
+            img{
+                width: 80px;
+                height: 40px;
+            }
+        }
+        .header_nav{
+            align-items: center;
+            ul{
+                margin: 0;
+                padding: 0;
+                li{
+                    &:hover{
+                        a{
+                            color: gray;
+                            text-decoration: underline;
+                        }
+                    }
+                    display: inline-block;
+                    padding: 0 10px;
+                    a{
+                        text-decoration: none;
+                        color: $color_text1;
+                        font-size: 18px;
+                        font-weight: 600;
+                        transition: all 0.5s;
+                    }
+                }
+                
+            }
+        }
+        .header_search_account{
+            display: flex;
+            align-items: center;
+            .search{
+                .mb-3{
+                    margin-top: 16px;
+                    input{
+                        border-radius: 20px;
+                        border: 1px solid $color_text1;
+                    }
+                }
+            }
+            .cart{
+                margin: 0 20px;
+                i{
+                    font-size: 25px;
+                    color: #000;
+                }
+            }
+            .account{
+                i{
+                    font-size: 25px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.banner{
+    .banner_img{
+        text-align: center;
+        height: 450px;
+        width: 100%;
+        background-position: center;
+        background-size:cover;
+        background-image: url(https://lzd-img-global.slatic.net/g/p/b1b9efce10dc5b6205b18ea27e94fe9f.png_1200x1200q80.png_.webp);
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
+    .banner_carousel{
+
+    }
+}
+
+.display{
+    .showDetailProduct{
+        #detail{
+            .detailProduct{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .img{
+                    img{
+
+                    }
+                }
+                .info{
+                    .h2_name{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                    h3{
+                        color: rgb(152, 205, 28);
+                    }
+                    ul{
+                        padding: 0 ;
+
+                        li{
+                            list-style: none;
+                            display: inline-block;
+                            background-color: gray;
+                            padding: 8px 12px;
+                            font-size: 20px;
+                            color: #000;
+                            font-weight: bold;
+                            margin-right: 5px;
+                        }
+
+                    }
+                    .h2_price{
+                        color: red;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+        
+    }
+    .display_product{
+        #product{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            gap: 35px;
+            justify-content: center;
+
+            .item{
+                padding: 10px;
+                border: 2px solid rgb(231, 225, 225);
+                border-radius: 10px;
+                .img{
+                    text-align: center;
+                }
+                .info{
+                    text-align: center;
+                    font-size: 15px;
+                    button{
+                        a{
+                            color: white;
+                            text-decoration: none;
+                            background-color:transparent;
+                        }   
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.menu{
+    .menu_content{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
